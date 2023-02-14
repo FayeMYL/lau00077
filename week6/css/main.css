@@ -52,8 +52,14 @@ nav ul a {
     direct child selector - will only select the child of the parent
 */
 
+/* CSS typogragraph properties */
+/* 1.5 times 24px if not specific the measurements */
 article>p {
     font-size: 24px;
+    font-weight:bold;
+    line-height: 1.5;
+    text-transform: lowercase;
+    text-align: center;
 }
 
 /* Adjacent sibling selector - Selects the element that is the very next sibling to the selected element if any exists */
@@ -66,6 +72,7 @@ h3~p {
 }
 
 /* Attribute Selectors */
+
 [href="#treatofweek"] {
     font-weight: bold;
     font-size: 24px;
