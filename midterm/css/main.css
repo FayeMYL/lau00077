@@ -2,6 +2,8 @@ body {
   background-color: #aad4cf;
   max-width: 1025px;
   margin: 0 auto;
+  margin-top: 0;
+  padding-top: 0;
   font-family:sans-serif;
 }
 
@@ -27,7 +29,6 @@ body {
 main {
   background-color: #ceeae7;
   padding: 5px;
-  border: 1px;
 }
 
 /* Navigation Bar */
@@ -41,7 +42,7 @@ main {
 
 .topnav li {
   display: inline-block;
-  border-right: 1px solid #bbb;
+  border-right: 1px solid gray;
 }
 
 .topnav ul :last-child {
@@ -65,10 +66,13 @@ main {
 }
 
 .image2 {
-  width: 150px;
+  width: 180px;
   float: left;
-  padding: 10px;
-  border: 2px;
+  padding: 5px 8px 10px 0;
+}
+
+ul {
+  padding: 0 0 0 15px;
 }
 
 /* Form styling */
@@ -81,7 +85,7 @@ main {
 input [text=text], select, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid gray;
   box-sizing: border-box;
   margin-top: 6px;
   resize: vertical
@@ -90,15 +94,14 @@ input [text=text], select, textarea {
 #name, #email{
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid gray;
   box-sizing: border-box;
-  margin: 6px;
+  margin-top: 6px;
   resize: vertical;
 }
 
-
 label {
-  padding: 12px 12px 12px 0;
+  padding: 10px 10px 10px 0;
   display: inline-block;
 }
 
