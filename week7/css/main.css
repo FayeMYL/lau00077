@@ -59,6 +59,7 @@ nav ul li {
 
 /* Selecting child element with multiple levels */
 nav ul a {
+    display: block;
     color: darkslategray;
     text-decoration: none;
     font-size: 1.5rem;
