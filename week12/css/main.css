@@ -1,0 +1,35 @@
+/* 
+font-family: 'Playfair Display', serif;
+font-family: 'Bodoni Moda', serif;
+*/
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700px;
+}
+
+h2 {
+    font-family: 'Bodoni Moda', serif;
+}
+
+p {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Font awesome icons */
+h1 i::before {
+    font-size: 3rem;
+    color: cornflowerblue;
+}
+
+.fa-map::before {
+    font-size: 6rem;
+    color: darkcyan;
+}
+
+.map iframe {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+}
