@@ -6,10 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Font Link Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
     <!-- Icon Link Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
 
     <title>Final Project</title>
@@ -17,114 +24,244 @@
 
 <body>
     <div class="container">
+
+        <!--This is an HTML comment -->
         <header class="masthead">
             <!-- Navigation  -->
             <nav class="main-nav">
-                <ul class="nav-list">
-                    <a href=""><img src="images/logo.png" alt="Home">
+                <div class="headlogo">
+                    <a href="index.html"><img src="images/logo.png" alt="Home" class="logo">
                     </a>
-                    <li><a href="home" class="current">Home</a></li>
-                    <li><a href="about">About Us</a></li>
-                    <li><a href="services">Services</a></li>
-                    <li><a href="team">Team</a></li>
-                    <li><a href="contact">Contact</a></li>
-                    <input type="text" class="search" placeholder="Search">
+                </div>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="current">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <div class="search-container">
+                        <input type="text" placeholder="Search">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
                 </ul>
             </nav>
         </header>
 
-
+        <!-- starting the main content of the page -->
         <main class="content">
-            <section class="about">
-                <img src="images/about-us.jpg" alt="">
-                <h1>Welcome to Three Star Media</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas ipsa tenetur itaque inventore
-                    aliquid eaque sequi suscipit cupiditate perferendis! Itaque nulla blanditiis iure molestiae hic
-                    quibusdam eveniet possimus quod minima!</p>
-                <button type="button" class="connect">Connect with us</button>
+            <section class="welcome" id="welcome">
+                <div class="main-banner">
+                    <div class="transbox">
+                        <h1>Welcome to Three Star Media</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas ipsa tenetur itaque
+                            inventore
+                            aliquid eaque sequi suscipit cupiditate perferendis! Itaque nulla blanditiis iure molestiae
+                            hic
+                            quibusdam eveniet possimus quod minima!</p>
+                        <button type="button" class="connect-btn">Connect with us <i class="fa-sharp fa-solid fa-play"></i>
+                        </button>
+                    </div>
+                </div>
             </section>
 
-            <section class="services">
+            <section class="about-us" id="about">
+                <img src="images/about-us.jpg" alt="About Us" class="about-img">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quis praesentium ad laudantium
+                    doloremque porro doloribus eum nemo dolore dolorum neque exercitationem hic optio rerum vero
+                    quisquam? Beatae, incidunt praesentium?
+                </p>
+
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ullam quos deserunt asperiores
+                    nulla eos beatae iusto, ut quo libero deleniti veritatis delectus maiores repudiandae voluptates aut
+                    aperiam odit culpa?
+                </p>
+            </section>
+
+            <section class="services" id="services">
                 <h2>Our Services</h2>
-                <container class="digital">
+                <div class="digital">
                     <img src="images/digital.jpg" alt="Digital Transformation">
                     <h3>Digital Transformation</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt molestiae nam natus iusto
                         distinctio nostrum necessitatibus repellat vel illo? Ea quo animi, neque ex assumenda quidem
                         fuga? Nostrum, repellendus soluta.</p>
-                </container>
 
-                <container class="marketing">
+                    <div>
+                        <button class="Digital-btn">Digital Plans
+                            <i class="fa-sharp fa-solid fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="marketing">
                     <img src="images/marketing.jpg" alt="Marketing">
                     <h3>Marketing</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, itaque atque. Voluptas necessitatibus quae similique inventore quod nobis doloribus molestias ut! Reprehenderit itaque distinctio placeat sit cupiditate, tempore explicabo ad!</p>
-                </container>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, itaque atque. Voluptas
+                        necessitatibus quae similique inventore quod nobis doloribus molestias ut! Reprehenderit itaque
+                        distinctio placeat sit cupiditate, tempore explicabo ad!
+                    </p>
+                    <div>
+                        <button class="marketing-btn">Marketing Plans
+                            <i class="fa-sharp fa-solid fa-play"></i>
+                        </button>
+                    </div>
+                </div>
 
-                <container class="video">
+                <div class="video">
                     <img src="images/video.jpg" alt="Video">
                     <h3>Video Production</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores modi minus animi. Aliquam repellendus, exercitationem vero aspernatur sit ratione. Repellendus nobis expedita consectetur deleniti neque obcaecati quisquam, ipsa facilis aliquid.</p>
-                </container>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores modi minus animi. Aliquam
+                        repellendus, exercitationem vero aspernatur sit ratione. Repellendus nobis expedita consectetur
+                        deleniti neque obcaecati quisquam, ipsa facilis aliquid.
+                    </p>
+                    <div>
+                        <button class="video-btn">Video Plans
+                            <i class="fa-sharp fa-solid fa-play"></i>
+                        </button>
+                    </div>
+                </div>
 
-                <container class="web">
+                <div class="web">
                     <img src="images/web.jpg" alt="Web Development">
                     <h3>Web Development</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere rem culpa recusandae eius, et magni architecto quasi itaque aspernatur! Mollitia veritatis illum cumque tempora ea nobis dolorum saepe error assumenda.</p>
-                </container>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere rem culpa recusandae eius, et
+                        magni architecto quasi itaque aspernatur! Mollitia veritatis illum cumque tempora ea nobis
+                        dolorum saepe error assumenda
+                    </p>
 
-                <container class="print">
+                    <div>
+                        <button class="web-btn">Web Plans
+                            <i class="fa-sharp fa-solid fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="print">
                     <img src="images/print.jpg" alt="Print">
                     <h3>Print</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit dolores cupiditate doloremque tempora fuga harum eos repellat sapiente eligendi? Eaque quis sequi numquam impedit, minus reiciendis saepe possimus voluptas magnam!</p>
-                </container>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit dolores cupiditate doloremque
+                        tempora fuga harum eos repellat sapiente eligendi? Eaque quis sequi numquam impedit, minus
+                        reiciendis saepe possimus voluptas magnam!
+                    </p>
+
+                    <div>
+                        <button class="print-btn">Print Plans
+                            <i class="fa-sharp fa-solid fa-play"></i>
+                        </button>
+                    </div>
+
+                </div>
             </section>
 
             <section class="vision">
                 <h3>Our Vision</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur neque blanditiis sit reprehenderit ullam doloremque, quasi quidem fugiat veniam possimus suscipit ratione pariatur molestiae aperiam libero eveniet a laborum quibusdam?</p>
-                
-                    <button type="button" class="learn">Learn More</button>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur neque blanditiis sit reprehenderit
+                    ullam doloremque, quasi quidem fugiat veniam possimus suscipit ratione pariatur molestiae aperiam
+                    libero eveniet a laborum quibusdam?
+                </p>
+
+                <div>
+                    <button class="learn-btn">Learn More
+                        <i class="fa-sharp fa-solid fa-play"></i>
+                    </button>
+                </div>
             </section>
 
-            <section class="team">
+            <section class="team" id="team">
                 <h2>Our Team</h2>
                 <div class="john">
                     <img src="images/john.jpg" alt="John Doe">
-                    <h3>John</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, consequuntur doloribus atque iste voluptatem laboriosam eaque. Reiciendis nulla non voluptatem cumque corrupti inventore nisi ducimus. Modi adipisci quis harum vero?</p>
+                    <h3>John Doe</h3>
+                    <h5>CEO and Co-owner</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, consequuntur doloribus atque
+                        iste voluptatem laboriosam eaque. Reiciendis nulla non voluptatem cumque corrupti inventore nisi
+                        ducimus. Modi adipisci quis harum vero?</p>
                 </div>
 
                 <div class="bob">
                     <img src="images/bob.jpg" alt="Bob Rite">
                     <h3>Bob Rite</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quidem quo similique consectetur error aliquid esse? Error, labore magnam, cum rerum distinctio alias repellendus architecto omnis ipsa vero recusandae ipsam.</p>
+                    <h5>CFO and Co-owner</h5>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quidem quo similique consectetur
+                        error aliquid esse? Error, labore magnam, cum rerum distinctio alias repellendus architecto
+                        omnis ipsa vero recusandae ipsam.</p>
                 </div>
-                
+
             </section>
 
-            <section class="contact">
+            <section class="contact" id="contact">
                 <h2>Contact Us</h2>
                 <div class="message">
                     <h3>Send us a message</h3>
-                </div>
+                    <!-- Adding a form -->
+                    <div class="form">
+                        <form action="thanks.html" method="get">
 
-                <div class="location">
-                    <h3>Location</h3>
-                    <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4784.711033225919!2d-75.76044367478123!3d45.350600453053815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680030012983!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <div>
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name">
+                            </div>
+
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+
+                            <div>
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message"></textarea>
+                            </div>
+
+                            <br>
+                            <div>
+                                <button class="button" type="submit">Send</button>
+                            </div>
+
+                        </form>
+
                     </div>
 
-                </div>
+                    <div class="location">
+                        <h3>Location</h3>
+                        <!-- Adding a Google map -->
+                        <div class="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4784.711033225919!2d-75.76044367478123!3d45.350600453053815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680030012983!5m2!1sen!2sca"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
 
-                <div class="hours">
-                    <h3>Hours of operation</h3>
-                    
-                </div>
+                    </div>
+
+                    <!-- Adding div for Hours of Operation Table -->
+                    <div class="hours">
+                        <h3>Hours of operation</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Days</th>
+                                    <th rowspan="2">Hours</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Monday - Friday</td>
+                                    <td>9 AM - 6 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday - Sunday</td>
+                                    <td>Closed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
             </section>
 
-
-            
         </main>
 
     </div>
@@ -136,12 +273,11 @@
         </p>
 
         <p class="images">
-            All the information is taken from the <a href="#
+            All the information is taken from the <a href="https://unsplash.com/
                 ">Unsplash</a>
         </p>
-
     </footer>
-
+    <!-- The end of the html -->
 </body>
 
 </html>

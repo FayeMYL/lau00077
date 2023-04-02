@@ -1,0 +1,255 @@
+/* Global Styles */
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;   
+}
+
+*,
+*:after
+*:before {
+    box-sizing: inherit;
+    line-height: inherit;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+/* LoVe HAte - Link, Visited, Hover/Focus, Active */
+a,
+a:link,
+a:visited {
+    color: inherit;
+}
+
+a:hover,
+a:focus {
+    color: #c78c06;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 5.063rem;
+}
+
+h2 {
+    font-size: 3.375rem;
+}
+
+h3 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+/* Top-bottom left-right */
+p {
+    margin: 1em 0;
+    padding: 10px;
+}
+
+.container,
+footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/**************************
+    Mobile Site Styles
+**************************/
+
+/* Style the heading */
+.masthead {
+    list-style: none;
+    padding: 20px;
+    text-align:center;
+    background-color: black;
+}
+
+.logo {
+    display: flex;
+}
+
+.headlogo {
+    background-color: #c78c06;
+}
+
+/* Style the navigation */
+.nav-list a {
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+    color: #c78c06;
+    }
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a.current {
+    background-color: #c78c06;
+    color: black;
+}
+
+/* Style the search container */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Style the search input */
+.search-container input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    box-sizing: border-box;
+}
+
+/* Style the search button */
+.search-container button[type="submit"] {
+    padding: 12px;
+    color: #c78c06;
+    border: 5px #c78c06;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+/* Main Content Styles */
+.main-banner {
+    background: url(../images/main-banner.jpg) no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.transbox {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.connect-btn {
+    background-color: #c78c06;
+    padding: 30px;
+    font-size: 20px;
+    margin: 10px;
+    border: none;
+}
+
+/* About us section */
+
+.about-us {
+    background-color: #ffe6ac;
+    padding: 10px;
+}
+
+.about-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+}
+
+/* Our services */
+
+.services {
+    background-color: white;
+    padding: 10px;
+}
+
+.digital,
+.marketing,
+.video,
+.web,
+.print {
+    background-color: #ffe6ac;
+}
+
+.digital img,
+.marketing img,
+.video img,
+.web img, 
+.print img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.digital-btn,
+.marketing-btn,
+.video-btn,
+.web-btn,
+.print-btn {
+    background-color: #222;
+    border: none;
+    color: white;
+    padding: 40px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+/* Our vision */
+.vision {
+    background: url(../images/vision.jpg) no-repeat;
+    background-size: cover;
+    padding: 10px;
+    color: white;
+}
+
+.vision .learn-btn {
+    background-color: #101D30;
+    border-color: #c78c06;
+    color: white;
+    padding: 40px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+/* Our Team */
+.team {
+    background-color: white;
+    padding: 10px;
+}
+
+.john,
+.bob {
+    background-color: #ffe6ac;
+}
+
+.john img,
+.bob img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Footer Styles */
+.site-footer {
+    background-color: black;
+    color: #c78c06;
+    margin-top: 20px;
+}
