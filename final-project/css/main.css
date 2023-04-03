@@ -246,6 +246,57 @@ footer {
     object-fit: cover;
 }
 
+hr {
+    border: 1px solid #c78c06;
+    width: 97%;
+}
+
+/* Style the form */
+
+input [text=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#name, #email{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 10px;
+    resize: vertical;
+}
+
+.button {
+    background-color:black;
+    color: #c78c06;
+    text-align: center;
+    text-decoration: none;
+  }
+
+/* Style the table */
+
+.table, th, td {
+    border: 1px solid;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    height: 50px;
+    text-align: center;
+    vertical-align:middle;
+    background-color: #ffe6ac;
+}
+
+td {
+    padding: 10px;
+}
 
 /* Footer Styles */
 .site-footer {
