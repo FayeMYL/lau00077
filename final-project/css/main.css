@@ -23,7 +23,7 @@ body {
 }
 
 button:active {
-    transform: translateY(2px);
+    transform: translateY(1px);
 }
 
 /* LoVe HAte - Link, Visited, Hover/Focus, Active */
@@ -277,7 +277,7 @@ input [text=text], textarea {
     text-decoration: none;
   }
 
-/* Style the table */
+/* Style the table (Hours of operation) */
 
 .table, th, td {
     border: 1px solid;
