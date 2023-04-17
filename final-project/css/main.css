@@ -339,7 +339,7 @@ td {
         flex: 1;
     }
 
-    /* Center the cnotents*/
+    /* Center the contents */
     .main-nav,
     .transbox,
     .about-content,
@@ -352,13 +352,13 @@ td {
         width: 90%;
     }
 
-    /* About us section */
+    /* About us section with 2 columns */
     .about-content {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    /* Our services, use grid box to create */
+    /* Our services, use grid box to create layout */
     .services-box {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
@@ -401,12 +401,10 @@ td {
         margin-bottom: 10px;
     }
 
-    /* Our team */
+    /* Our team, use the flexbox to create layout */
 
     .team-box {
         display: flex;
-        flex: wrap;
-        /* justify-content: space-between; */
     }
 
     .john,
