@@ -229,5 +229,5 @@ p {
 }
 
 .li {
-    flex-direction: ;
+    flex-direction:column;
 }
